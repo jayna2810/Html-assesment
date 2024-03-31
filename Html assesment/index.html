@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="icon" href="assets/icons/favicon.ico">
+</head>
+<header>
+    <h1 class="header">Student registration form</h1>
+</header>
+<body>
+    <div class="container">
+    <!-- Form starts here -->
+    <form class="regform" method="post" action="#">
+        <!-- first name -->
+        <div class="row">
+            <div class="column1">
+                <label for="firstname">First name</label>
+            </div>
+            <div class="column2">
+                <input type="text" id="firstname" name="firstname" class="inputs" placeholder="Enter your first name" maxlength="6" minlength="3">
+            </div>
+        </div>
+
+        <!-- last name -->
+        <div class="row">
+            <div class="column1">
+                <label for="lastname">Last name</label> 
+            </div>
+            <div class="column2">
+                <input type="text" id="lastname" name="lastname" class="inputs" placeholder="Enter your last name" required> 
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="row">
+            <div class="column1">
+                <label for="email">Email</label>
+            </div>
+            <div class="column2">
+                <input type="email" id="email" name="email" placeholder="It should contain @" required>  
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="row">
+            <div class="column1">
+                <label for="mobile">Mobile</label>
+            </div>
+            <div class="column2">
+                <input type="number" id="mobile" name="mobile" maxlength="10" required>
+            </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="row">
+            <div class="column1">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="column2">
+                <input type="radio" id="male" name="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <!-- Date of birth -->
+        <div class="row">
+            <div class="column1">
+                <label for="dob">Date of birth:</label>
+            </div>
+            <div class="column2">
+                <input type="date" id="dob" name="dob" required>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="row">
+            <div class="column1">
+                <label for="address">Address</label>
+            </div>
+            <div class="column2">
+                <textarea placeholder="Type here.."></textarea>
+            </div>
+        </div>
+
+        <!-- City -->
+        <div class="row">
+            <div class="column1">
+                <label for="address">City</label>
+            </div>
+            <div class="column2">
+                <input type="text" id="address" name="address">
+            </div>
+        </div>
+
+        <!-- Area pin -->
+        <div class="row">
+            <div class="column1">
+                <label for="pin">Area PIN</label>
+            </div>
+            <div class="column2">
+                <input type="number" id="pin" name="pin">
+            </div>
+        </div>
+
+        <!-- State -->
+        <div class="row">
+            <div class="column1">
+                <label for="state">State</label>
+            </div>
+            <div class="column2">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        
+        <!-- Qualification -->
+        <div class="row">
+            <div class="column1">
+                <label for="qualification">Qualification</label>
+            </div>
+            <div class="column2">
+                <select id="qualification" name="qualification">
+                    <option>Bachelor of engineering</option>
+                    <option>MBA</option>
+                    <option>IT</option>
+                    <option>BBA</option>
+                    <option>Diploma in engineering</option>
+                </select><br>
+            </div>
+        </div>
+
+        <!-- Specialization -->
+        <div class="row">
+            <div class="column1">
+                <label for="address">Specialization</label>
+            </div>
+            <div class="column2">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="cs">Computer science</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="it">Information technoloy</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="ca">Computer architecture</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="tc">Tele communication</label>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="row">
+            <div class="column1">
+                <label for="address">Password</label>
+            </div>
+            <div class="column2">
+                <input type="password" id="password" name="password">
+            </div>
+        </div>
+
+        <!-- Registered button -->
+        <div class="row">
+            <button class="btn" type="submit" value="submit">Registered</button>
+        </div>
+    </form>
+    <!-- Form ends here -->
+    </div>
+</body>
+</html>
